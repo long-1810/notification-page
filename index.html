@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container-functionality">
+      <div>Notifications <div id="notification-number">0</div></div>
+      <a id="mark-all-as-read" href="#" onclick="f_markAllAsRead()">Mark all as read</a>
+    </div>
+
+    <div id="container-notifications">
+      <div id="notification-cell" class="unread">
+        <img src="assets/images/avatar-mark-webber.webp" alt="" id="avatar">
+        <div id="content"><b id="name">Mark Webber</b> reacted to your recent post <b id="post">My first tournament today!</b></div>
+        <div id="duration">1m ago</div>
+      </div>
+      <div id="notification-cell" class="unread">
+        <img src="assets/images/avatar-angela-gray.webp" alt="" id="avatar">
+        <div id="content"><b id="name">Angela Gray</b> followed you</div>
+        <div id="duration">5m ago</div>
+      </div>
+      <div id="notification-cell" class="unread">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="" id="avatar">
+        <div id="content"><b id="name">Jacob Thompson</b> has joined your group <b id="chess-club">Chess Club</b></div>
+        <div id="duration">1 day ago</div>
+      </div>
+      <div id="notification-cell" class="read">
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" id="avatar">
+        <div id="content"><b id="name">Rizky Hasanuddin</b> sent you a private message</div>
+        <div id="duration">5 days ago</div>
+        <div id="private-message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</div>
+      </div>
+      <div id="notification-cell" class="read">
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="" id="avatar">
+        <div id="content"><b id="name">Kimberly Smith</b> commented on your picture</div>
+        <div id="duration">1 week ago</div>
+        <img src="./assets/images/image-chess.webp" alt="Picture" id="picture-post">
+      </div>
+      <div id="notification-cell" class="read">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="" id="avatar">
+        <div id="content"><b id="name">Nathan Peterson</b> reacted to your recent post <b id="post">5 end-game strategies to increase your win rate</b></div>
+        <div id="duration">2 weeks ago</div>
+      </div>
+      <div id="notification-cell" class="read">
+        <img src="assets/images/avatar-anna-kim.webp" alt="" id="avatar">
+        <div id="content"><b id="name">Anna Kim</b> left the group <b id="chess-club">Chess Club</b></div>
+        <div id="duration">2 weeks ago</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
